@@ -13,24 +13,23 @@
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License.
+    limitations under the License
 -->
 <persistence version="2.1"
    xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="
         http://xmlns.jcp.org/xml/ns/persistence
         http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-   <persistence-unit name="primary">
+   <persistence-unit name="e4-us">
       <!-- If you are running in a production environment, add a managed 
          data source, this example data source is just for development and testing! -->
       <!-- The datasource is deployed as <EAR>/META-INF/teste-ds.xml, you
          can find it in the source at ear/src/main/application/META-INF/teste-ds.xml -->
-      <jta-data-source>java:jboss/datasources/testeDS</jta-data-source>
-      <class>br.com.model.Enterprise</class>
-      <class>br.com.model.Person</class>
+      <jta-data-source>java:/OracleDS</jta-data-source>
+      <class>br.com.contabo.model.TB40Model</class>
       <properties>
          <!-- Properties for Hibernate -->
-         <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+         <!-- <property name="hibernate.hbm2ddl.auto" value="create-drop" /> -->
          <property name="hibernate.show_sql" value="false" />
       </properties>
    </persistence-unit>

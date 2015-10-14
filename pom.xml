@@ -19,7 +19,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <name>teste</name>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>inspiration</groupId>
+    <groupId>jsfcore</groupId>
     <artifactId>teste</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -72,7 +72,7 @@
             <!-- Define the version of the EJB jar so that we don't need 
                 to repeat ourselves in every module -->
             <dependency>
-                <groupId>inspiration</groupId>
+                <groupId>jsfcore</groupId>
                 <artifactId>teste-ejb</artifactId>
                 <version>${project.version}</version>
                 <type>ejb</type>
@@ -81,7 +81,7 @@
             <!-- Define the version of the WAR so that we don't need to repeat 
                 ourselves in every module -->
             <dependency>
-                <groupId>inspiration</groupId>
+                <groupId>jsfcore</groupId>
                 <artifactId>teste-web</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
