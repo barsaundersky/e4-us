@@ -14,4 +14,4 @@ Configurando o NodeJS e o projeto, passos:
   ás vezes teremos problemas com identação e chamadas de funções callback e pode virar uma bagunça e não conseguiremos
   visualizar o código decentemente, aqui está o plugin para o brackets: https://github.com/brackets-beautify/brackets-beautify
   
-# O projeto conta com o NodeJS + ExpressJS (Framework de requisição) + SequelizeJS (ORM para o Banco)
+* O projeto conta com o NodeJS + ExpressJS (Framework de requisição) + SequelizeJS (ORM para o Banco)
